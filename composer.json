@@ -1,0 +1,32 @@
+{
+  "name": "tymfrontiers-cdn/php-http-header",
+  "description": "PHP HTTP header manager",
+  "keywords": ["php", "http","header","tym","frontiers"],
+  "homepage": "https://github.com/tymfrontiers-cdn/php-http-header",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+      {
+          "name": "Sir Louis",
+          "email": "me@sirlouis.io",
+          "homepage": "https://sirlouis.io",
+          "role": "developer"
+      },
+      {
+          "name": "Tym Frontiers Ltd",
+          "email": "git@tymfrontiers.com",
+          "homepage": "https://tymfrontiers.com",
+          "role": "developer"
+      }
+  ],
+  "require": {
+    "php" : ">=5.3",
+    "tymfrontiers-cdn/php-generic" : ">=0.1@stable"
+  },
+  "require-dev": {},
+  "autoload": {
+      "psr-4": {
+          "TymFrontiers\\HTTP\\": "src/"
+      }
+  }
+}
