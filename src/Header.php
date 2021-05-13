@@ -125,7 +125,7 @@ class Header{
     if( $redirect ){
       $rdt = \defined('REQUEST_SCHEME') ? REQUEST_SCHEME : 'http://';
       $rdt .= $_SERVER['HTTP_HOST'];
-      $rdt .= '/' . $code;
+      $rdt .= '/app/' . $code;
       $query = [];
       if( !empty($request) ) $query["request"] = $request;
       if( !empty($message) ) $query["message"] = $message;
