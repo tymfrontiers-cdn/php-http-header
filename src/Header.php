@@ -121,7 +121,7 @@ class Header{
     \header('Expires: Mon, 26 Jul 1997 05:00:00 GMT'); // Date in the past
     \header('Pragma: no-cache');
   }
-  private static function _do(int $code,bool $redirect=false,string $request, string $message='', array $add_header=[]){
+  private static function _do(int $code,bool $redirect, string $request, string $message='', array $add_header=[]){
     if( $redirect ){
       $rdt = \defined('REQUEST_SCHEME') ? REQUEST_SCHEME : 'http://';
       $rdt .= $_SERVER['HTTP_HOST'];
