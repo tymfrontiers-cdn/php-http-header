@@ -68,7 +68,7 @@ class Header{
     }
   }
   public static function redirect(string $to,string $message='', array $add_header=[]){
-    if( !empty($message) ) $to .= Generic::setGet($to,['message'=>\urlencode($message)]);
+    if( !empty($message) ) $to = Generic::setGet($to,['message'=>\urlencode($message)]);
     if( !empty($add_header) ){
       foreach($add_header as $key=>$val){
         \header('X-Tym-'.$key.': '.$val);
